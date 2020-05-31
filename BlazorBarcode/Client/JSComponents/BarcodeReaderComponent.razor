@@ -1,0 +1,46 @@
+﻿@inject IJSRuntime IJSRuntime
+@inject Inventory.InventoryClient InventoryClient
+
+<style>
+
+	/* In order to place the tracking correctly */
+	canvas.drawing, canvas.drawingBuffer, .drawingBuffer {
+		position: absolute;
+		left: inherit;
+		top: inherit;
+		display: none;
+		border-radius: 10px;
+	}
+</style>
+
+<div class="input-group mb-3">
+	<button id="btn-show-scanner" @onclick="Reader">Scan</button>
+</div>
+
+
+
+<div id="div-video-container">
+	<video class="dbrScanner-video" playsinline="true"></video>
+</div>
+
+
+
+
+@code {
+
+
+	[Parameter]
+	public EventCallback<string> GetValue { get; set; }
+
+	private async Task Reader()
+	{
+		await IJSRuntime.InvokeVoidAsync("read", DotNetObjectReference.Create(this));
+	}
+
+	[JSInvokable]
+	public void SetReturnValue(string value)
+	{
+		GetValue.InvokeAsync(value);
+		StateHasChanged();
+	}	
+}

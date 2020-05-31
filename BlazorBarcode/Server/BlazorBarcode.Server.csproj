@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <DisableImplicitComponentsAnalyzers>true</DisableImplicitComponentsAnalyzers>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.28.0" />
+    <PackageReference Include="Grpc.AspNetCore.Web" Version="2.28.0-pre2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="3.2.0-preview2.20160.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Client\BlazorBarcode.Client.csproj" />
+    <ProjectReference Include="..\Shared\BlazorBarcode.Shared.csproj" />
+  </ItemGroup>
+<ItemGroup>
+    <Protobuf Include="..\BlazorBarcode.gRPC\Protos\inventory.proto" GrpcServices="Client" />
+  </ItemGroup>
+
+</Project>

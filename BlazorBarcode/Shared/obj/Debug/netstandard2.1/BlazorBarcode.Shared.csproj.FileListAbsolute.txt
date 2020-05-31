@@ -1,0 +1,44 @@
+C:\Projects\BlazorBarcode\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.deps.json
+C:\Projects\BlazorBarcode\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.dll
+C:\Projects\BlazorBarcode\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.pdb
+C:\Projects\BlazorBarcode\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.AssemblyInfoInputs.cache
+C:\Projects\BlazorBarcode\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.AssemblyInfo.cs
+C:\Projects\BlazorBarcode\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.csproj.CoreCompileInputs.cache
+C:\Projects\BlazorBarcode\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.dll
+C:\Projects\BlazorBarcode\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.pdb
+C:\Projects\Blazor\BlazorBarcode\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.deps.json
+C:\Projects\Blazor\BlazorBarcode\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.dll
+C:\Projects\Blazor\BlazorBarcode\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.pdb
+C:\Projects\Blazor\BlazorBarcode\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.csprojAssemblyReference.cache
+C:\Projects\Blazor\BlazorBarcode\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.AssemblyInfoInputs.cache
+C:\Projects\Blazor\BlazorBarcode\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.AssemblyInfo.cs
+C:\Projects\Blazor\BlazorBarcode\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.csproj.CoreCompileInputs.cache
+C:\Projects\Blazor\BlazorBarcode\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.dll
+C:\Projects\Blazor\BlazorBarcode\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.pdb
+C:\Users\anant\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.deps.json
+C:\Users\anant\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.dll
+C:\Users\anant\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.pdb
+C:\Users\anant\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.csprojAssemblyReference.cache
+C:\Users\anant\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.AssemblyInfoInputs.cache
+C:\Users\anant\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.AssemblyInfo.cs
+C:\Users\anant\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.csproj.CoreCompileInputs.cache
+C:\Users\anant\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.dll
+C:\Users\anant\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.pdb
+C:\Users\Sandip Uchdadiya\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.deps.json
+C:\Users\Sandip Uchdadiya\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.dll
+C:\Users\Sandip Uchdadiya\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.pdb
+C:\Users\Sandip Uchdadiya\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.csprojAssemblyReference.cache
+C:\Users\Sandip Uchdadiya\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Sandip Uchdadiya\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.AssemblyInfoInputs.cache
+C:\Users\Sandip Uchdadiya\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.AssemblyInfo.cs
+C:\Users\Sandip Uchdadiya\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.dll
+C:\Users\Sandip Uchdadiya\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.pdb
+E:\Learning\Blazor\BlazorBarcodeCam-master\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.deps.json
+E:\Learning\Blazor\BlazorBarcodeCam-master\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.dll
+E:\Learning\Blazor\BlazorBarcodeCam-master\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.pdb
+E:\Learning\Blazor\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.csprojAssemblyReference.cache
+E:\Learning\Blazor\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.csproj.CoreCompileInputs.cache
+E:\Learning\Blazor\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.AssemblyInfoInputs.cache
+E:\Learning\Blazor\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.AssemblyInfo.cs
+E:\Learning\Blazor\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.dll
+E:\Learning\Blazor\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.pdb

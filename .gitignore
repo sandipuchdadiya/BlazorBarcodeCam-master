@@ -1,0 +1,7 @@
+
+BlazorBarcode/BlazorBarcode.gRPC/bin/
+BlazorBarcode/BlazorBarcode.gRPC/obj/
+BlazorBarcode/Client/bin/
+BlazorBarcode/Client/obj/
+BlazorBarcode/Server/bin/
+BlazorBarcode/Server/obj/

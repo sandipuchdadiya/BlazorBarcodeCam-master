@@ -1,0 +1,14 @@
+﻿
+<div class="row row-cols-1">
+    <div class="col">
+        <p>@Data.EAN</p>
+    </div>
+    <div class="col">
+        <p>@Data.Name</p>
+    </div>
+</div>
+
+
+@code {
+    [Parameter] public Product Data { get; set; }
+}

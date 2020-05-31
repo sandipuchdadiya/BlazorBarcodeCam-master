@@ -1,0 +1,47 @@
+﻿@inject Inventory.InventoryClient InventoryClient
+
+<div class="input-group mb-3">
+	<div class="input-group-prepend">
+		<input id="searchText" class="form-control" type="search" width="30" placeholder="Scan or search" @onchange="@((ChangeEventArgs __e) => AddItem(__e) )" list="products-autocomplete" value="@searchText" />
+	</div>
+	<button type="button" class="btn btn-primary">
+		<span class="glyphicon glyphicon-search"></span> Search
+	</button>
+</div>
+
+@code {
+	//string searchText = "";
+	//public string searchText { get; set; } = "";
+	[Parameter]
+	public string searchText { get; set; }
+	//List<AutocompleteItem> autocompleteItems = new List<AutocompleteItem>();
+
+	[Parameter] public EventCallback<string> OnBarcodeDetected { get; set; }
+
+	async Task AddItem(ChangeEventArgs evt)
+	{
+		Console.WriteLine(evt.Value.ToString());
+		var ean = evt.Value.ToString().ToLower();
+		await OnBarcodeDetected.InvokeAsync(ean);
+		searchText = "";
+	}
+
+	//async Task UpdateAutocomplete(ChangeEventArgs eventArgs)
+	//{
+	//    searchText = (string)eventArgs.Value;
+	//    var matchingItem = autocompleteItems.FirstOrDefault(i => i.Name == searchText);
+	//    if (matchingItem != null)
+	//    {
+	//        // They selected an item from the list. Treat as a form submission.
+	//        searchText = matchingItem.EAN;
+	//        await AddItem();
+	//    }
+	//    else
+	//    {
+	//        // Update autocomplete
+	//        var request = new AutocompleteRequest { SearchQuery = searchText };
+	//        var reply = await InventoryClient.AutocompleteAsync(request);
+	//        autocompleteItems = reply.Items.ToList();
+	//    }
+	//}
+}

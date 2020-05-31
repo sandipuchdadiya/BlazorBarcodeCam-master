@@ -1,0 +1,152 @@
+﻿@page "/"
+@inject ProductsState productsState
+
+
+@using Net.ConnectCode.Barcode;
+@using System;
+@using System.Text;
+<h1>Code 39 Barcode</h1>
+
+<div id="barcode">@barcode</div>
+<div id="barcode_text">@barcode_text</div>
+
+<div class="input-group mb-3">
+	<div class="input-group-prepend">
+		<input type="text" class="form-control" id="barcodeValue" placeholder="Name of barcode" width="35" @bind="@_barcodeValue" />
+	</div>
+	<button class="btn btn-primary" @onclick="GenerateBarcode">Generate Barcode</button>
+</div>
+
+
+<br>
+<hr />
+
+
+<SearchBox searchText="@BarcodeValue" OnBarcodeDetected="HandleNewBarcode"></SearchBox>
+
+@*<h4>Blazor BarcodeReader</h4>*@
+@*<h6>Value: @_barcodeValue</h6>*@
+
+<BarcodeReaderComponent GetValue="((value) => SetValue(value))">
+</BarcodeReaderComponent>
+
+
+
+
+@foreach (var row in productsState.Rows)
+{
+	<ProductRowDisplay Data="row" />
+}
+
+
+@code{
+
+	protected override Task OnAfterRenderAsync(bool firstRender)
+	{
+		Console.WriteLine("OnAfterRenderAsync");
+		return base.OnAfterRenderAsync(firstRender);
+	}
+
+	private string _barcodeValue = string.Empty;
+
+	[Parameter]
+	public string BarcodeValue
+	{
+		get { return _barcodeValue; }
+		set
+		{
+			_barcodeValue = value;
+			this.SideEffect();
+		}
+	}
+	public void SideEffect()
+	{
+		Console.WriteLine("has changed");
+		HandleNewBarcode(_barcodeValue);
+	}
+
+
+
+	private void SetValue(string value)
+	{
+		BarcodeValue = value;
+	}
+
+	async Task HandleNewBarcode(string ean)
+	{
+		await productsState.AddItemAsync(ean);
+		Console.WriteLine(productsState.Rows[0].EAN);
+		Console.WriteLine(productsState.Rows[0].Name);
+	}
+
+
+
+
+
+
+	//Generate barcode and Create on database
+
+
+	public string NewProductName { get; set; }
+
+	string barcode = "";
+	string barcode_text = "";
+	void GenerateBarcode()
+	{
+		BarcodeFonts bcf = new BarcodeFonts();
+		bcf.BarcodeType = BarcodeFonts.BarcodeEnum.Code39;
+		bcf.CheckDigit = BarcodeFonts.YesNoEnum.No;
+		var rstring = RandomStringForBarcode();
+		Console.WriteLine("Random string: " + rstring);
+		bcf.Data = rstring; // "1234567";
+		bcf.encode();
+		barcode = bcf.EncodedData;
+		barcode_text = bcf.HumanText;
+
+		//Console.WriteLine(bcf.BarcodeType);
+		//Console.WriteLine(bcf.CheckDigit);
+		//Console.WriteLine(bcf.Data);
+		//Console.WriteLine(bcf.EncodedData);
+		//Console.WriteLine(bcf.HumanText);
+
+
+		SaveRecord(bcf.HumanText);
+	}
+
+	string RandomStringForBarcode()
+	{
+		StringBuilder builder = new StringBuilder();
+		builder.Append(RandomString(4, true));
+		builder.Append(RandomNumber(1000, 9999));
+		builder.Append(RandomString(2, false));
+		return builder.ToString();
+	}
+
+	public int RandomNumber(int min, int max)
+	{
+		Random random = new Random();
+		return random.Next(min, max);
+	}
+
+	public string RandomString(int size, bool lowerCase)
+	{
+		StringBuilder builder = new StringBuilder();
+		Random random = new Random();
+		char ch;
+		for (int i = 0; i < size; i++)
+		{
+			ch = Convert.ToChar(Convert.ToInt32(Math.Floor(26 * random.NextDouble() + 65)));
+			builder.Append(ch);
+		}
+		if (lowerCase)
+			return builder.ToString().ToLower();
+		return builder.ToString();
+	}
+
+	async void SaveRecord(string barcode)
+	{
+
+
+		await productsState.InsertProductAsync(barcode, BarcodeValue);
+	}
+}

@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1.0">-->
+    <title>BlazorBarcode</title>
+    <base href="/" />
+    <!--<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="manifest.json" rel="manifest" />
+    <!--<script src="https://cdn.jsdelivr.net/npm/dynamsoft-javascript-barcode@7.4.0-v1/dist/dbr.js" data-productKeys="t0068NQAAAKLyVbFYD/Lll8ZnoxBXMkuUA8JZKzFNrKZC+HI2ITCbQhdx6TpaoB0jXcIFwPQNDc+yz/swKDVjZF5Dmgo03hA="></script>-->
+    <script src="dist/dbr.js" data-productKeys="t0068NQAAAIw+L7lbkZcozFmIZlRJ8Sn6scTqUOWt9il32x2PPelHMJ4l8GFUsdj7BBKVkk2JMU5wYIyke0FvNj0NZyEDckI="></script>
+    <script src="read.js"></script>
+    <script>
+
+    </script>
+
+    <STYLE TYPE="text/css" media="screen,print">
+
+        @font-face {
+            font-family: CCode39;
+            src: url("fonts/ConnectCode39.woff") format('woff')
+        }
+
+        #barcode {
+            font-weight: normal;
+            font-style: normal;
+            line-height: normal;
+            font-family: 'CCode39', sans-serif;
+            text-align: center;
+            font-size: 32px
+        }
+
+        #barcode_text {
+            font-weight: normal;
+            font-style: normal;
+            line-height: normal;
+            font-family: sans-serif;
+            text-align: center;
+            font-size: 24px
+        }
+    </STYLE>
+
+</head>
+
+<body>
+    <app>Loading...</app>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="my_lib.js"></script>
+    <script src="_framework/blazor.webassembly.js"></script>
+
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+option csharp_namespace = "BlazorBarcode.gRPC";
+
+package Inventory;
+
+// The Product service definition.
+service Inventory {
+  // Sends a Product
+  rpc ProductRPC (ProductRequest) returns (ProductResponse);
+
+  // Insert a Product
+  rpc InsertProductRPC (InsertRequest) returns (InsertResponse);
+}
+
+message Product {
+	string EAN = 1;
+	string name = 2;;
+}
+
+// The request message containing the product's name.
+message ProductRequest {
+  string EAN = 1;
+}
+
+// The response message containing the product.
+message ProductResponse {
+  Product Product = 1;
+}
+
+message InsertRequest {
+  Product Product = 1;
+}
+
+message InsertResponse {
+  int32 Result = 1;
+}

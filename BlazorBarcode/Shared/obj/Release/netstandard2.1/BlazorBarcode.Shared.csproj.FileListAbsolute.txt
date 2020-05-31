@@ -1,0 +1,9 @@
+C:\Projects\BlazorBarcode\BlazorBarcode\Shared\bin\Release\netstandard2.1\BlazorBarcode.Shared.deps.json
+C:\Projects\BlazorBarcode\BlazorBarcode\Shared\bin\Release\netstandard2.1\BlazorBarcode.Shared.dll
+C:\Projects\BlazorBarcode\BlazorBarcode\Shared\bin\Release\netstandard2.1\BlazorBarcode.Shared.pdb
+C:\Projects\BlazorBarcode\BlazorBarcode\Shared\obj\Release\netstandard2.1\BlazorBarcode.Shared.csprojAssemblyReference.cache
+C:\Projects\BlazorBarcode\BlazorBarcode\Shared\obj\Release\netstandard2.1\BlazorBarcode.Shared.AssemblyInfoInputs.cache
+C:\Projects\BlazorBarcode\BlazorBarcode\Shared\obj\Release\netstandard2.1\BlazorBarcode.Shared.AssemblyInfo.cs
+C:\Projects\BlazorBarcode\BlazorBarcode\Shared\obj\Release\netstandard2.1\BlazorBarcode.Shared.csproj.CoreCompileInputs.cache
+C:\Projects\BlazorBarcode\BlazorBarcode\Shared\obj\Release\netstandard2.1\BlazorBarcode.Shared.dll
+C:\Projects\BlazorBarcode\BlazorBarcode\Shared\obj\Release\netstandard2.1\BlazorBarcode.Shared.pdb
