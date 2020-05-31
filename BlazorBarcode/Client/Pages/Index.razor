@@ -31,13 +31,20 @@
 </BarcodeReaderComponent>
 
 
+<table class="table" style="visibility: @IsVisible">
+	<thead class="thead-dark">
+		<tr>
+			<th scope="col">Barcode</th>
+			<th scope="col">Name</th>
+		</tr>
+	</thead>
 
+	@foreach (var row in productsState.Rows)
+	{
+		<ProductRowDisplay Data="row" />
+	}
 
-@foreach (var row in productsState.Rows)
-{
-	<ProductRowDisplay Data="row" />
-}
-
+</table>
 
 @code{
 
@@ -149,4 +156,10 @@
 
 		await productsState.InsertProductAsync(barcode, BarcodeValue);
 	}
+
+
+}
+
+@functions {
+	protected string IsVisible => productsState.Rows.Count > 0 ? "visible" : "hidden";
 }

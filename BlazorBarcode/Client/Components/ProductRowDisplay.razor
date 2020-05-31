@@ -1,14 +1,24 @@
 ﻿
-<div class="row row-cols-1">
-    <div class="col">
-        <p>@Data.EAN</p>
-    </div>
-    <div class="col">
-        <p>@Data.Name</p>
-    </div>
-</div>
+@*<div class="row row-cols-1">
+	<div class="col">
+		<p>@Data.EAN</p>
+	</div>
+	<div class="col">
+		<p>@Data.Name</p>
+	</div>
+</div>*@
+
+
+	<tbody>		
+		<tr>
+			<td>@Data.EAN</td>
+			<td>@Data.Name</td>
+		</tr>
+	</tbody>
+
+
 
 
 @code {
-    [Parameter] public Product Data { get; set; }
+	[Parameter] public Product Data { get; set; }
 }
