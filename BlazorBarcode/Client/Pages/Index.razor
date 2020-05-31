@@ -7,27 +7,29 @@
 @using System.Text;
 <h1>Code 39 Barcode</h1>
 
-<div id="barcode">@barcode</div>
-<div id="barcode_text">@barcode_text</div>
+
 
 <div class="input-group mb-3">
 	<div class="input-group-prepend">
 		<input type="text" class="form-control" id="barcodeValue" placeholder="Name of barcode" width="35" @bind="@_barcodeValue" />
 	</div>
-	<button class="btn btn-primary" @onclick="GenerateBarcode">Generate Barcode</button>
+	<button class="btn btn-primary" @onclick="GenerateBarcode">
+		<i class="fa fa-barcode" aria-hidden="true"></i>
+		Generate Barcode
+	</button>
 </div>
 
+<div id="barcode">@barcode</div>
+<div id="barcode_text">@barcode_text</div>
 
 <br>
 <hr />
 
 
-<SearchBox searchText="@BarcodeValue" OnBarcodeDetected="HandleNewBarcode"></SearchBox>
+@*<SearchBox searchText="@BarcodeValue" OnBarcodeDetected="HandleNewBarcode"></SearchBox>*@
 
-@*<h4>Blazor BarcodeReader</h4>*@
-@*<h6>Value: @_barcodeValue</h6>*@
 
-<BarcodeReaderComponent GetValue="((value) => SetValue(value))">
+<BarcodeReaderComponent GetValue="((value) => SetValue(value))" searchText="@BarcodeValue" OnBarcodeDetected="HandleNewBarcode">
 </BarcodeReaderComponent>
 
 
