@@ -9,21 +9,48 @@
 
 
 
-<div class="input-group mb-3">
-	<div class="input-group-prepend">
-		<input type="text" class="form-control" id="barcodeValue" placeholder="Name of barcode" width="35" @bind="@_barcodeValue" />
-	</div>
-	<div class="input-group-prepend">
-		<input type="text" class="form-control" id="barcodeDescription" placeholder="Description" width="35" @bind="@_barcodeDescription" />
-	</div>
-	<button class="btn btn-primary" @onclick="GenerateBarcode">
-		<i class="fa fa-barcode" aria-hidden="true"></i>
-		Generate Barcode
-	</button>
-</div>
+<div class="container" style="margin:0px">
+	<div class="row">
+		<div class="col">
 
-<div id="barcode">@barcode</div>
-<div id="barcode_text">@barcode_text</div>
+			<div class="row">
+				<div class="col">
+
+					<div class="input-group-prepend">
+						<input type="text" class="form-control" id="barcodeValue" placeholder="Name of barcode" width="35" @bind="@_barcodeValue" />
+					</div>
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<div class="col">
+					<div class="input-group-prepend">
+						<input type="text" class="form-control" id="barcodeDescription" placeholder="Description" width="35" @bind="@_barcodeDescription" />
+					</div>
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<div class="col">
+					<button class="btn btn-primary" @onclick="GenerateBarcode">
+						<i class="fa fa-barcode" aria-hidden="true"></i>
+						Generate Barcode
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div id="barcode">@barcode</div>
+			<div id="barcode_text">@barcode_text</div>
+			<br />
+			<div id="download" style="visibility:@IsVisibleDownload; padding-left:40%; padding-right:40%">
+				<button class="btn btn-primary">
+					<i class="fa fa-download" aria-hidden="true"></i> Download
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
 
 <br>
 <hr />
@@ -176,4 +203,7 @@
 
 @functions {
 	protected string IsVisible => productsState.Rows.Count > 0 ? "visible" : "hidden";
+
+	protected string IsVisibleDownload => string.IsNullOrEmpty(barcode_text) ? "hidden" : "visible";
+
 }
