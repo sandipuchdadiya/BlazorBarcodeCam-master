@@ -15,7 +15,8 @@ service Inventory {
 
 message Product {
 	string EAN = 1;
-	string name = 2;;
+	string name = 2;
+    string description = 3;
 }
 
 // The request message containing the product's name.

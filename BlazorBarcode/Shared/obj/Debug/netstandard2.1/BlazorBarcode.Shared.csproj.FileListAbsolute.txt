@@ -36,7 +36,6 @@ C:\Users\Sandip Uchdadiya\Downloads\BlazorBarcodeCam-master\BlazorBarcodeCam-mas
 E:\Learning\Blazor\BlazorBarcodeCam-master\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.deps.json
 E:\Learning\Blazor\BlazorBarcodeCam-master\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.dll
 E:\Learning\Blazor\BlazorBarcodeCam-master\BlazorBarcode\Shared\bin\Debug\netstandard2.1\BlazorBarcode.Shared.pdb
-E:\Learning\Blazor\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.csprojAssemblyReference.cache
 E:\Learning\Blazor\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.csproj.CoreCompileInputs.cache
 E:\Learning\Blazor\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.AssemblyInfoInputs.cache
 E:\Learning\Blazor\BlazorBarcodeCam-master\BlazorBarcode\Shared\obj\Debug\netstandard2.1\BlazorBarcode.Shared.AssemblyInfo.cs

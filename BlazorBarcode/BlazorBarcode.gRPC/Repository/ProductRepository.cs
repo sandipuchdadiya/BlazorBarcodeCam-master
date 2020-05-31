@@ -19,12 +19,21 @@ namespace BlazorBarcode.gRPC.Repository
 
         public int InsertProduct(BarcodeProduct product)
         {
-            using (var context = new MyContext())
+            try
             {
-                context.Products.Add(product);
+                using (var context = new MyContext())
+                {
+                    context.Products.Add(product);
 
-                return context.SaveChanges();
+                    return context.SaveChanges();
+                }
             }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            
         }
     }
 }
